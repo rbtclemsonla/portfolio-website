@@ -2,7 +2,7 @@
 Colors used:
 Heading: #72c7e7;
 Subheading: #177385;
-Text: #000000
+Text: #black
 Background: #f5ebd4;
 */
 body {
@@ -11,7 +11,7 @@ body {
   font-size: 16px; /* Sets the font size to 16px */
   font-weight: 300; /* Sets the font weight to 300 */
   line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+  color: #black;
 }
 
 h1, h2, h3, h4 {
@@ -21,7 +21,7 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 2.75em;
   font-weight: 700;
-  color: #000000
+  color: #black
 }
 
 h2 {
@@ -57,49 +57,80 @@ img {
   color: #000000
 }
 
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #72c7e7;
-  opacity: 0.8;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.2s;
+/*links*/
+a:link {
+  color: #177385;
 }
 
-.button:hover {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #177385;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.2s opacity;
-}
-
-/*hyperlinks*/
-a {
-  color: #177385; /* needed to override the default link color */
-  text-decoration: none;
-  font-weight: 700;
-  transition-duration: 0.6s;
+a:visited {
+  color: #000000;
+  text-decoration: underline;
 }
 
 a:hover,
 a:focus {
   color: #177385;
-  text-decoration: underline;
 }
 
-a:visited,
-a:focus {
-  color: #177385; /* needed to override the default link color */
+a:active {
+  /* selected link */
+  color: #177385;
 }
 
-a:active,
-a:focus {
-  color: #177385; /* needed to override the default link color */
+/*buttons*/
+.button {
+  display: inline-block;
+  background-color: #72c7e7;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #4e8e41;
+  transition: 0.2s opacity;
+}
+
+.button:hover,
+.button.learn.more:focus {
+  background-color: #177385;
+}
+
+.button:active {
+  background-color: #177385;
+  color: #ffffff;
+}
+
+.button.learn.more {
+  color: #ffffff;
+}
+
+.button.coming.soon {
+  background-color: darkgray;
+  pointer-events: none;
+  border-bottom: 2px solid gray;
+}
+
+.button.contact {
+  background-color: transparent;
+  color: #177385;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px;
+  border: 2px solid #177385;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+  margin-bottom: 15px;
+}
+
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #72c7e7;
+  color: 177385;
+  text-decoration: none;
+}
+
+.button.contact:active {
+  background-color: #72c7e7;
+  color: #177385;
 }
 
 /* Layout styling */
@@ -149,6 +180,10 @@ selector {
   max-width: 250px;
 }
 
+.social-media img{
+max-width: 32px;
+}
+
 nav > ul {
   list-style-type: none;
   padding: 0;
@@ -159,10 +194,19 @@ nav > ul > li {
 }
 
 nav > ul > li > a {
-  padding: 6px;
+  padding: 0 10px;
   text-transform: uppercase;
-  font-weight: 700;
-  color: #aeb1b2;
+  font-weight: 500;
+  color: #177385;
+}
+
+nav > ul > li > a:hover {
+  color: #177385;
+  text-decoration: underline;
+}
+
+nav > ul > li > a:active {
+  color: #ffffff;
 }
 
 #hero {
