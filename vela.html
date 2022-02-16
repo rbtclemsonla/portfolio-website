@@ -7,9 +7,12 @@
 <!-- START HEAD -->
 <head>
   <meta charset="utf-8">
-  <title>Vela</title>
+  <title>Blake Thomas UX Designer Charleston, SC</title>
+  <!--normalize cdn-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--responsiveness-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- END OF HEAD -->
@@ -19,20 +22,24 @@
 
   <!-- START HEADER -->
   <header>
-      <div class="container">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <div class="center">
-          <img src="img/about/logo@2x.jpg" alt="blake thomas logo">
-            <nav>
-              <ul>
-                <li>
-                  <a href="index.html">Work</a>
-                  <a href="about.html">About</a>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </nav>
+              <a href="index.html">
+                <img src="img/about/logo@2x.svg" alt="blake thomas logo" class="logo">
+              </a>
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="index.html">Work</a>
+                      <a href="about.html">About</a>
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+          </div>
+        </div>
       </div>
-    </div>
   </header>
   <!-- END OF HEADER -->
 
@@ -502,7 +509,11 @@
         </picture>
       </div><!-- end first column -->
         <p>
-          <a href="https://xd.adobe.com/view/c4ddeecd-6032-4e03-a35e-75340e7d6b9c-918e/" class="button">High Fidelity Prototype</a>
+          <a href="https://xd.adobe.com/view/c4ddeecd-6032-4e03-a35e-75340e7d6b9c-918e/">
+            <button class="button">
+              <span class="button">High Fidelity Prototype</span>
+            </button>
+          </a>
         </p>
       <div>
       <!-- open second column (used for text) -->
@@ -543,18 +554,21 @@
       <h2 class="contact">Get in Touch</h2>
         <p>Do you have a UX Design project you are needing help with? If so let me know. I love to set up a time to chat with you about it.</p>
         <p>Call:<a href=8645292315> 843.529.2315 </a></p>
-        <p><a href="mailto:blakethomas014@gmail.com" class="button">Email Me</a></p>
+        <p><a href="mailto:blakethomas014@gmail.com" class="button contact">Email Me</a>
+        </p>
 
     <!--Social Media Layout and Placeholders-->
-        <a href="https://www.linkedin.com/in/blake-thomas-24a8a273/" target="_blank">
-          <img src="img/social-media-icons/linkedin.png" alt="linkedin icon">
-        </a>
-        <a href="https://www.facebook.com/blakethomas.clemson">
-          <img src="img/social-media-icons/facebook.png" alt="facebook icon">
-        </a>
-        <a href="https://twitter.com/rbtclemsonla" target="_blank">
-          <img src="img/social-media-icons/twitter.png" alt="twitter icon">
-        </a>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/blake-thomas-24a8a273/" target="_blank">
+            <img src="img/social-media-icons/linkedin.svg" alt="linkedin icon">
+          </a>
+          <a href="https://www.facebook.com/blakethomas.clemson">
+            <img src="img/social-media-icons/facebook.svg" alt="facebook icon">
+          </a>
+          <a href="https://twitter.com/rbtclemsonla" target="_blank">
+            <img src="img/social-media-icons/twitter.svg" alt="twitter icon">
+          </a>
+        </div>
       <p>Copyright Blake Thomas 2022</p>
     </div>
   </footer>

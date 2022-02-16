@@ -1,108 +1,182 @@
 /*
 Colors used:
-Heading: #72c7e7;
-Subheading: #177385;
-Text: #000000
-Background: #f5ebd4;
+Primary color (dark blue): #72c7e7;
+Secondary color (light blue): #177385;
+Background: #f5ebd4
+Text: #000000 or #ffffff
 */
-body {
-  background-color: #f5ebd4;
-  font-family: 'Lato', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: #000000;
+* {
+    box-sizing: border-box;
 }
 
-h1, h2, h3, h4 {
-  line-height: 1.4;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f5ebd4;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px; /* Sets the font size to 16px */
+    font-weight: 300; /* Sets the font weight to 300 */
+    line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+    color: #000000;
+  }
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.4;
 }
 
 h1 {
-  font-size: 2.75em;
-  font-weight: 700;
-  color: #000000
+    font-size: 2.75em;
+    font-weight: 700;
 }
 
 h2 {
-  font-size: 2.25em;
-  font-weight: 700;
-  color: #72c7e7
+    font-size: 2.25em;
+    font-weight: 700;
 }
 
 h3 {
-  font-size: 1.75em;
-  font-weight: 400;
-  color: #177385
+    font-size: 1.75em;
+    font-weight: 600;
 }
 
 h4 {
-  font-size: 1.25em;
-  font-weight: 400;
+    font-size: 1.35em;
+    font-weight: 500;
 }
 
 img {
-  width: 100%;
+    width: 100%;
 }
 
-.hero {
-  color: #000000
-}
-
-.main {
-  color: #000000
-}
-
-.contact {
-  color: #000000
-}
-
-.button {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #72c7e7;
-  opacity: 0.8;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.2s;
-}
-
-.button:hover {
-  display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #177385;
-  color: #ffffff; /* needed to override the default link color */
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  transition: 0.2s opacity;
-}
-
-/*hyperlinks*/
 a {
-  color: #177385; /* needed to override the default link color */
-  text-decoration: none;
-  font-weight: 700;
-  transition-duration: 0.6s;
+    background-color: inherit;
+    color: #177385;
+    text-decoration: none;
+}
+
+a:visited {
+    background-color: inherit;
+    color: #ffffff;
 }
 
 a:hover,
 a:focus {
+    background-color: inherit;
+    color: #177385;
+}
+
+a:active {
+    background-color: inherit;
+    color: #177385;
+}
+
+/* Buttons */
+.button {
+  display: inline-block;
+  background-color: #72c7e7;
+  color: #ffffff;
+  font-weight: 500;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #4e8e41;
+  transition: 0.2s opacity;
+}
+
+.button:hover,
+.button.learn.more:focus {
+  background-color: #177385;
+}
+
+.button:active {
+  background-color: #177385;
+  color: #ffffff;
+}
+
+.button.learn.more {
+  color: #ffffff;
+}
+
+.button.coming.soon {
+  background-color: darkgray;
+  pointer-events: none;
+  border-bottom: 2px solid gray;
+}
+
+.button.contact {
+  background-color: transparent;
   color: #177385;
-  text-decoration: underline;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 10px;
+  border: 2px solid #177385;
+  border-radius: 3px;
+  transition: 0.2s opacity;
+  margin-bottom: 15px;
 }
 
-a:visited,
-a:focus {
-  color: #177385; /* needed to override the default link color */
+.button.contact:hover,
+.button.contact:focus {
+  background-color: #72c7e7;
+  color: 177385;
+  text-decoration: none;
 }
 
-a:active,
-a:focus {
-  color: #177385; /* needed to override the default link color */
+.button.contact:active {
+  background-color: #72c7e7;
+  color: #177385;
+}
+
+svg {
+    max-width: 32px;
 }
 
 /* Layout styling */
+.container {
+    padding: 0 15px;
+}
+
+.row {
+    margin: 25px 0; /* 25px top and bottom, 0 left and right */
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+#hero h1 {
+    text-align: center;
+    margin: 0;
+    padding: 0.67em 0;
+}
+
+#hero span {
+    display: block;
+}
+
+#work h2 {
+    text-align: center;
+}
+
+.logo {
+    max-width: 225px;
+}
+
+.social-media img{
+max-width: 32px;
+}
+
 header {
   background-color: #72c7e7;
   opacity: 0.8;
@@ -115,70 +189,218 @@ header {
   position: relative;
 }
 
-selector {
-  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
-}
-
-selector {
-  float: right;
-}
-
-.container {
-  max-width: 1200px;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-.container {
-  padding: 0 15px;
-}
-
-.row {
-  margin: 25px 0; /* 25px top and bottom, 0 left and right */
-}
-
-#work .row { padding-bottom: 25px; border-bottom: 1px solid #4a4a4a; }
-
-.center {
-  text-align: center;
-}
-
-.logo {
-  max-width: 250px;
-}
-
 nav > ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-nav > ul > li {
-  display: inline-block;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 nav > ul > li > a {
-  padding: 6px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #aeb1b2;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: inherit;
+    color: #177385;
+}
+
+nav > ul > li > a:visited {
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    background-color: inherit;
+    color: #ffffff;
+}
+
+nav > ul > li > a:hover {
+    padding: 0 15px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #177385;
+    font-weight: 700;
+    padding: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #000000;
+    transition: 0.2s opacity;
+}
+
+nav > ul > li > a:active {
+    padding: 0 15px;
+    text-transform: uppercase;
+    background-color: #ffffff;
+    color: #177385;
+    font-weight: 700;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    border-bottom: 2px solid #000000;
+    transition: 0.2s opacity;
+}
+
+.navtoggle li:not(:last-child) {
+    display: none;
+    padding: 0 0 10px;
+}
+
+.navtoggle,
+.navtoggle.responsive {
+    position: relative;
+}
+
+.navtoggle.responsive nav {
+    padding: 24px 0 0;
+}
+
+.navtoggle li .icon {
+    position: absolute;
+    right: 0;
+    top: 2px;
+    font-size: 30px;
+    padding-right: 0.3em;
+}
+
+.navtoggle.responsive li {
+    display: block;
+    padding: 10px 0;
+    border-top: 1px solid #54e9d1;
 }
 
 #hero {
-  background-color: #72c7e7;
-  opacity: 0.8;
-  padding: 10px;
-  margin: 10px;
-  display: inline-block;
-  width: 100%;
-}
-
-#hero h1 {
-  margin: 0;
-  padding: 0.67em 0;
+    background-color: #ffffff;
+    color: #2e2e2e;
+    padding: 0.67em;
+    text-align: center;
 }
 
 main {
-  padding-top: 25px;
+    padding-top: 25px;
+}
+
+#contact {
+    background-color: #2e2e2e;
+    text-align: center;
+    color: #ffffff;
+    padding: 0.67em;
+}
+
+#copyright {
+    text-align: center;
+    font-size: 12px;
+}
+
+#about-picture {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+    }
+
+    50% {
+        fill: #fcffad;
+    }
+
+    100% {
+        fill: #f76414;
+    }
+}
+
+.sun {
+    animation-duration: 4s;
+    animation-name: color-change;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation-duration: 30s;
+    animation-name: cloud-move;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+/* ==============================
+Medium devices (641px and larger)
+================================= */
+@media only screen and (min-width: 641px) {
+    header {
+        text-align: unset;
+        padding: 20px 0 13px;
+    }
+
+    nav {
+        width: auto;
+        float: right;
+        margin-top: 4px;
+    }
+
+    nav > ul {
+        margin: 1em 0;
+    }
+
+    nav > ul > li > a {
+        display: inline-block;
+    }
+
+    .navtoggle li:not(:last-child) {
+        display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    #about h3 {
+        margin-top: 0;
+    }
+}
+
+/* ==============================
+  Large devices (1024px or larger)
+  ================================= */
+@media only screen and (min-width: 1024px) {
+    .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .col-md-7 {
+        width: 60%;
+    }
+
+    .col-md-5 {
+        width: 40%;
+    }
 }

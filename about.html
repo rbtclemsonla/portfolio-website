@@ -7,9 +7,12 @@
 <!-- START HEAD -->
 <head>
   <meta charset="utf-8">
-  <title>About Blake Thomas</title>
+  <title>Blake Thomas UX Designer Charleston, SC</title>
+  <!--normalize cdn-->
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+  <!--css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--responsiveness-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <!-- END OF HEAD -->
@@ -19,20 +22,24 @@
 
   <!-- START HEADER -->
   <header>
-      <div class="container">
+    <div class="container">
+      <div class="navtoggle" id="myNavtoggle">
         <div class="center">
-          <img src="img/about/logo@2x.jpg" alt="blake thomas logo">
-            <nav>
-              <ul>
-                <li>
-                  <a href="index.html">Work</a>
-                  <a href="about.html">About</a>
-                  <a href="#contact">Contact</a>
-                </li>
-              </ul>
-            </nav>
+              <a href="index.html">
+                <img src="img/about/logo@2x.svg" alt="blake thomas logo" class="logo">
+              </a>
+                <nav>
+                  <ul>
+                    <li>
+                      <a href="index.html">Work</a>
+                      <a href="about.html">About</a>
+                      <a href="#contact">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+          </div>
+        </div>
       </div>
-    </div>
   </header>
   <!-- END OF HEADER -->
 
@@ -54,16 +61,17 @@
             <!-- open paragraph -->
             I’m a UX designer with a background in landscape architecture. In my current and previous roles, I focused working on residential and commercial projects where I specialized in creating digital drawings and other project deliverables. In addition, I gained visual design skills through creating project presentations, renderings, and image  boards. For these projects, I adapted the design based on the client’s goals, and ensured that their wants and needs were met. The opportunity to be more creative and focus on the user experience is what led me to transition into a career as a UX designer. I aim to create digital products that are simple, easy to use, and visually appealing.
             </p><!-- end paragraph -->
-            <a href="files/Blake-Thomas-UX-Designer.pdf" class="button ">Download My Resume</a>
+            <a href="files/Blake-Thomas-UX-Designer.pdf" class="button learn more">Download My Resume</a>
+            </a>
         </div>
         <!-- COLUMN: SKILLS AND TOOLS -->
         <div>
           <h2 class="main">Skills & Tools</h2>
-          <!-- CONTAINER FOR COLUMNS -->
-          <div>
-            <!-- COLUMN: SKILLS -->
-            <div>
-              <h3 class="main">Skills</h3>
+          <div class="row" id="skills">
+              <!--beginning of 'relevant skills' and 'tools' container-->
+              <div class="col-md-6">
+                  <!--beginning of relevant skills-->
+              <h3 class="main">Relevant Skills</h3>
               <ul>
                 <li>Research</li>
                 <li>User flows</li>
@@ -74,9 +82,10 @@
                 <li>Style guides</li>
               </ul>
             </div>
-            <!-- COLUMN: TOOLS -->
-            <div>
-              <h3 class="main">Tools</h3>
+            <!--end of relevant skills-->
+            <div class="col-md-6" id="tools">
+                <!--beginning of 'tools'-->
+              <h3 class="main">My Toolkit</h3>
                 <ul>
                   <li>Adobe XD</li>
                   <li>Sketch</li>
@@ -85,10 +94,15 @@
                   <li>Photoshop</li>
               </ul>
             </div>
+            <!--end of 'tools'-->
           </div>
+          <!--end of 'relevant skills'-->
         </div>
+        <!--end of 'skills & tools' section-->
       </div>
+      <!--end of my container-->
     </div>
+    <!--end of section with page content-->
 
   </main>
   <!-- END OF MAIN CONTENT SECTION -->
@@ -99,21 +113,24 @@
       <h2 class="contact">Get in Touch</h2>
         <p>Do you have a UX Design project you are needing help with? If so let me know. I love to set up a time to chat with you about it.</p>
         <p>Call:<a href=8645292315> 843.529.2315 </a></p>
-        <p><a href="mailto:blakethomas014@gmail.com" class="button">Email Me</a></p>
+        <p><a href="mailto:blakethomas014@gmail.com" class="button contact">Email Me</a>
+        </p>
 
     <!--Social Media Layout and Placeholders-->
-        <a href="https://www.linkedin.com/in/blake-thomas-24a8a273/" target="_blank">
-          <img src="img/social-media-icons/linkedin.png" alt="linkedin icon">
-        </a>
-        <a href="https://www.facebook.com/blakethomas.clemson">
-          <img src="img/social-media-icons/facebook.png" alt="facebook icon">
-        </a>
-        <a href="https://twitter.com/rbtclemsonla" target="_blank">
-          <img src="img/social-media-icons/twitter.png" alt="twitter icon">
-        </a>
+        <div class="social-media">
+          <a href="https://www.linkedin.com/in/blake-thomas-24a8a273/" target="_blank">
+            <img src="img/social-media-icons/linkedin.svg" alt="linkedin icon">
+          </a>
+          <a href="https://www.facebook.com/blakethomas.clemson">
+            <img src="img/social-media-icons/facebook.svg" alt="facebook icon">
+          </a>
+          <a href="https://twitter.com/rbtclemsonla" target="_blank">
+            <img src="img/social-media-icons/twitter.svg" alt="twitter icon">
+          </a>
+        </div>
       <p>Copyright Blake Thomas 2022</p>
     </div>
   </footer>
-<!-- END OF FOOTER -->
+  <!-- END OF FOOTER -->
 </body>
 </html>
