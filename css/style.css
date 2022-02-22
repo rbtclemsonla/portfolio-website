@@ -280,7 +280,7 @@ nav > ul > li > a:active {
 .navtoggle li .icon {
     position: absolute;
     right: 0;
-    top: 2px;
+    top: 10px;
     font-size: 30px;
     padding-right: 0.3em;
 }
@@ -399,6 +399,10 @@ Medium devices (641px and larger)
 
     .navtoggle li:not(:last-child) {
         display: inline-block;
+    }
+
+    .navtoggle li:last-child {
+        display: none;
     }
 
     .col-md-6 {

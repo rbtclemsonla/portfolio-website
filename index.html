@@ -12,6 +12,8 @@
   <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
   <!--css stylesheet-->
   <link rel="stylesheet" type="text/css" href="css/style.css">
+  <!--fontawesome icons-->
+  <script src="https://kit.fontawesome.com/c89f8c4219.js" crossorigin="anonymous"></script>
   <!--responsiveness-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -24,20 +26,17 @@
   <header>
     <div class="container">
       <div class="navtoggle" id="myNavtoggle">
-        <div class="center">
-              <a href="index.html">
-                <img src="img/about/logo.svg" alt="blake thomas logo" class="logo">
-              </a>
-                <nav>
-                  <ul>
-                    <li>
-                      <a href="index.html">Work</a>
-                      <a href="about.html">About</a>
-                      <a href="#contact">Contact</a>
-                    </li>
-                  </ul>
-                </nav>
-          </div>
+        <a href="index.html">
+          <img src="img/about/logo.svg" alt="blake thomas logo" class="logo">
+        </a>
+            <nav>
+              <ul>
+                <li><a href="index.html">Work</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+              </ul>
+            </nav>
         </div>
       </div>
   </header>
@@ -1428,6 +1427,7 @@
       </div>
     </footer>
     <!-- END OF FOOTER -->
+  <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 </html>
