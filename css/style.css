@@ -220,6 +220,12 @@ header {
   position: relative;
 }
 
+ul {
+  display: table;
+  margin: 0 auto;
+  text-align: left;
+}
+
 nav > ul {
     list-style-type: none;
     padding: 0;
