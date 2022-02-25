@@ -91,9 +91,10 @@ a:active {
   transition: 0.2s opacity;
 }
 
-.button:hover,
+.button.learn.more:hover,
 .button.learn.more:focus {
   background-color: #177385;
+  color: #ffffff
 }
 
 .button:active {
@@ -102,18 +103,17 @@ a:active {
 }
 
 .button.learn.more {
-  color: #ffffff;
+  color: #4c4c4c;
 }
 
 .button.coming.soon {
   background-color: darkgray;
-  pointer-events: none;
   border-bottom: 2px solid gray;
 }
 
 .button.contact {
   background-color: transparent;
-  color: #177385;
+  color: #ffffff;
   text-transform: uppercase;
   font-weight: 500;
   padding: 10px;
@@ -126,7 +126,7 @@ a:active {
 .button.contact:hover,
 .button.contact:focus {
   background-color: #72c7e7;
-  color: 177385;
+  color: #4c4c4c;
   text-decoration: none;
 }
 
@@ -198,6 +198,14 @@ div.cell {
 
 #work h3 {
     color: #177385;
+}
+
+#skills {
+    text-align: center;
+}
+
+#tools {
+    text-align: center;
 }
 
 .logo {
