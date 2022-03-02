@@ -235,8 +235,8 @@ header {
 
 ul {
   display: table;
-  margin: 0 auto;
-  text-align: left;
+  width: 100%;
+  text-align: center;
 }
 
 nav > ul {
